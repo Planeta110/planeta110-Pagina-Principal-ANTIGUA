@@ -1,0 +1,37 @@
+.title_hub {
+    border: 10px solid black;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.footer_copy {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Cambia el color de fondo según tus preferencias */
+    text-align: center;
+}
+
+.Copyright {
+    font-size: 18px; /* Tamaño de fuente */
+    color: rgb(196, 186, 186); /* Color del texto */
+    padding: 10px; /* Espacio interior alrededor del texto */
+}
+
+.tex_cread {
+    font-size: 18px; /* Tamaño de fuente */
+    color: rgb(207, 203, 203); /* Color del texto */
+    padding: 10px; /* Espacio interior alrededor del texto */
+}
+
+.Historia {
+    text-align: center;
+    font-size: 16px;
+}
+
+body {
+    background-image: url('img/imagen\ fondo.jpg'); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}

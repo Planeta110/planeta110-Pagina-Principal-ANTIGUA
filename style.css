@@ -1,0 +1,21 @@
+body {
+    background-color:white;
+    font-family:   'Courier New', Courier, monospace;
+}
+
+a {
+    color: black;
+}
+
+.title {
+    color: black;
+    text-align: center;
+}
+
+.paginas {
+    position: absolute;
+    z-index: 1;
+    left: 1;
+    text-align: center;
+    display: flex;
+}
