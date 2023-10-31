@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
     <title>PAGINA PRINCIPAL</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,32 +12,60 @@
             <h1>PAGINA PRINCIPAL</h1>
             <h3>OTRAS PAGINAS</h3>
         </div>
-        
     </div>
-    <div class="pagina1">
-        <span>
-            <a  class="imagenes"   href="pag/paginas/blog/blog.html"
-                <p>BLOG CUTRE</p> 
-                <img src="pag/imag/blog cutre.png" width="150" height="90px" />
-            </a>
-        </span>
+    <div class="pags">
+        <div class="pagina1">
+            <span>
+                <a  class="imagenes"   href="pag/paginas/blog/blog.html"
+                    <p>BLOG CUTRE</p> 
+                    <img src="pag/imag/blog cutre.png" width="150" height="90px" />
+                </a>
+            </span>
         
-    </div>
-    <div class="pagina2">
-        <span>
-            <a  class="imagenes"    href="pag/paginas/null/null.html"
+        </div>
+        <div class="pagina2">
+            <span>
+                <a  class="imagenes"    href="pag/paginas/null/null.html"
                 <p>Daynocraft</p> 
                 <img src="pag/imag/NULL.jpg" width="150" height="90px" />
-            </a>
-        </span>
+                </a>
+            </span>
+        </div>
+        <div class="pagina3">
+            <span>
+                <a  class="imagenes"    href="pag/paginas/null/null.html"
+                    <p>NULL</p> 
+                    <img src="pag/imag/NULL.jpg" width="150" height="90px" />
+                </a>
+            </span>
+        </div>
     </div>
-    <div class="pagina3">
-        <span>
-            <a  class="imagenes"    href="pag/paginas/null/null.html"
-                <p>NULL</p> 
-                <img src="pag/imag/NULL.jpg" width="150" height="90px" />
-            </a>
-        </span>
+    <div class="comentario">
+        <h2 class="titulo_com">Envia aqui tu comentario</h2>
+        <form action="https://formsubmit.co/569f82f896af8c8413ea0080e2a9831a" method="POST">
+            <div class="cosascont">
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="name">
+            </div>
+            <div class="cosascont">
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email">
+            </div>
+            <div class="cosascont">
+                <label for="subject">Asunto</label>
+                <input type="text" name="subject">
+            </div>
+            <div class="cosascont">
+                <label for="comments">Comentarios</label>
+                <textarea name="comments" cols="30" rows="8"></textarea>
+            </div>
+            <div class="cosascont">
+                <input type="submit" value="Enviar">
+            </div>
+
+            <input type="hidden" name="_next" value="https://planeta110.github.io/">
+        </form>
     </div>
+    
 </body>
 </html>
