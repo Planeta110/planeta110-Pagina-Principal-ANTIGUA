@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+}
+
+button {
+    margin-top: 25px;
+    background-color: blue;
+    border-radius: 10px;
+    border: 10px solid blue;
+    cursor: pointer;
+}
+
+.consulTie {
+    background-color: aliceblue;
+    height: 25em;
+    width: 15em;
+    margin: 0 auto;
+    border-radius: 10px;
+}
