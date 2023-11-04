@@ -120,7 +120,7 @@ td {
     width:30em;
 }
 @media (max-width: 768px) {
-    table {
+    table{
         justify-content: center; /* Centra los elementos horizontalmente */
     }
 
@@ -130,3 +130,53 @@ td {
         margin-bottom: 20px; /* Espacio entre filas de elementos */
     }
 }
+
+.discord {
+    background-color: rgba(255, 255, 255, 0.377);
+    color: whitesmoke;
+    margin-top: -28px;
+    margin-left: 38px;
+    width: 400px;
+    height: 100px;
+    border: 5px solid rgba(255, 255, 255, 0.377);
+    border-radius: 10px;
+    box-shadow: 1em 1em 1em rgba(175, 175, 175, 0.798);
+}
+
+.discordimg {
+    margin-left: 300px;
+    margin-top: -40px;
+}
+
+.distext {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+/* .arriva {
+    position: fixed;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.583);
+    border: 10px transparent rgba(255, 255, 255, 0.583);
+    border-radius: 10px;
+    width: 400px;
+    height: 50px;
+    left: 700px;
+    top: 10px;
+    display: hidden;
+    
+}
+.textoss {
+    text-decoration: none;
+    display: hidden;
+    
+}
+@media (max-width: 768px) {
+    .arriva {
+        justify-content: center; /* Centra los elementos horizontalmente */
+    /* }
+
+    .textoss{
+     left: 10px;
+    }
+} */ 

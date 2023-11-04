@@ -34,3 +34,26 @@ li {
     height: 50em;
     width: 100em;
 }
+
+@media (max-width: 768px) {
+    .listacomponentes, .inicio {
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+
+    ul, span, a, li, .cosas{
+
+        width: 100%; /* Los elementos ocuparán todo el ancho en pantallas más pequeñas */
+        margin-right: 0; /* No hay espacio entre elementos */
+        margin-bottom: 20px; /* Espacio entre filas de elementos */
+    }
+}
+
+ul {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .ul {
+        display: none; /* Oculta la lista */
+    }
+}
