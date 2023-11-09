@@ -19,7 +19,6 @@
 body{
     font-size: 38px;
     text-align: center;
-    margin-top: 200px;
     background-color: #b2bec3;
 }
 
@@ -46,5 +45,31 @@ button{
     width: 350px;
     color: #dfe6e9;
     cursor: pointer;
+}
+
+.todo {
+    margin-top: 200px;
+}
+
+
+
+.boton{
+    text-align: center;
+}
+
+a{
+    margin-top: 500px;
+    text-decoration: none;
+    color: black;
+}
+
+.volver {
+    text-align: left;
+    font-size: 28px;
+    background-color: #dfe6e9;
+    margin-top: 18px;
+    height: 50px;
+    width: 140px;
+    border-radius: 10px;
 }
 
