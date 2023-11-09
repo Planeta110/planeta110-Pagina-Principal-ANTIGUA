@@ -1,0 +1,50 @@
+.galleta {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(/pag/imag/galletas.jpg);
+    background-size: 450px;
+    background-position: -150px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.galleta:active{
+    background-size: 445px;
+    background-position: -150px;
+    width: 140px;
+    height: 140px;
+}
+
+body{
+    font-size: 38px;
+    text-align: center;
+    margin-top: 200px;
+    background-color: #b2bec3;
+}
+
+.resultado {
+    margin-top: auto;
+    text-align: center;
+}
+
+.fondo {
+    box-shadow: 0 0 0 #dfe6e9;
+    margin: 0 auto;
+    background-color: #dfe6e9;
+    border: none;
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+}
+
+button{
+    background-color: brown;
+    border: none;
+    border-radius: 18px;
+    height: 38px;
+    width: 350px;
+    color: #dfe6e9;
+    cursor: pointer;
+}
+
