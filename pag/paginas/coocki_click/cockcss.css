@@ -37,7 +37,7 @@ body{
     width: 400px;
 }
 
-button{
+.botones button{
     background-color: brown;
     border: none;
     border-radius: 18px;
@@ -64,12 +64,43 @@ a{
 }
 
 .volver {
-    text-align: left;
+    text-align: center;
     font-size: 28px;
     background-color: #dfe6e9;
     margin-top: 18px;
     height: 50px;
     width: 140px;
     border-radius: 10px;
+}
+
+.reiniciar {
+    font-size: 28px;
+    background-color: #dfe6e9;
+    margin-top: -50px;
+    margin-left: 158px;
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botonesa {
+    background-color: #dfe6e9;
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .encabezado{
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+
+    .botone{
+        width: 100%; /* Los elementos ocuparán todo el ancho en pantallas más pequeñas */
+        margin-left: 10px;
+    }
 }
 
