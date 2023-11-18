@@ -93,6 +93,48 @@ a{
     cursor: pointer;
 }
 
+.botones-derecha{
+    margin-left: 1400px;
+    margin-top: -400px;
+    background-color: #dfe6e9;
+    border: none;
+    border-radius: 10px;
+    height: 10em;
+    
+}
+
+.mejoras-derecha {
+    margin-left: 1160px;
+    margin-top: -640px;
+    background-color: #dfe6e9;
+    border: none;
+    border-radius: 10px;
+    height: 200px;
+    width: 600px;
+}
+
+.mejoras-derecha button {
+    background-color: brown;
+    border: none;
+    border-radius: 18px;
+    height: 38px;
+    width: 300px;
+    color: #dfe6e9;
+    cursor: pointer;
+}
+
+.aleatorio {
+    background-color: yellow;
+    margin-top: -100px;
+    margin-left: 500px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 50px;
+    border: black 5px solid;
+}
+
+
+
 @media (max-width: 768px) {
     .encabezado{
         justify-content: center; /* Centra los elementos horizontalmente */

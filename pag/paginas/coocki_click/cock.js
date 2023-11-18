@@ -4,6 +4,8 @@ let abuelas = parseInt(localStorage.getItem("abuela")) || 0;
 let supercursor = parseInt(localStorage.getItem("supercursor")) || 0;
 const resultadoElement = document.getElementById("resultado");
 let segundosAesperarCur = 1000;
+let aleatorios = 0;
+
 
 function mas1() {
     contador += 1;
@@ -19,6 +21,26 @@ if (abuelas => 1) {
 if (supercursor => 1) {
   aumentarContadorSPC()
 }
+
+function aleatorio() {
+  if (contador >= 50000)
+    contador -= 10000;
+    var numeroAleatorio = Math.floor(Math.random() * 3) + 1;
+    if (numeroAleatorio == 1) {
+      contador += 11000
+      resultadoElement.textContent = "Mas 11000 de galletas";
+    }else if (numeroAleatorio == 2) {
+      cursorr += 30;
+      resultadoElement.textContent = "Mas 30 cursorr";
+    } else if (numeroAleatorio == 3) {
+      contador -= contador * 0.5;
+      resultadoElement.textContent = "MENOS %50";
+    }
+  else {
+    resultadoElement.textContent = "No tienes suficientes galletas son 50000";
+  }
+}
+
 
 function reiniciar() {
   contador = 0;
@@ -50,13 +72,13 @@ function aumentarContador() {
   resultadoElement.textContent = "Galletas: " + contador;
   setTimeout(function() {
     aumentarContador()
-  }, 10000);
+  }, 60000);
   
 }
 
 function abuela() {
-  if (contador >= 500) {
-    contador -= 500;
+  if (contador >= 350) {
+    contador -= 350;
     abuelas += 1;
     aumentarContadorABU()
   } else{
@@ -66,11 +88,11 @@ function abuela() {
 }
 
 function aumentarContadorABU() {
-  contador += 100 * abuelas;
+  contador += 10 * abuelas;
   resultadoElement.textContent = "Galletas: " + contador;
   setTimeout(function() {
     aumentarContadorABU()
-  }, 30000);
+  }, 60000);
   
 }
 
@@ -87,7 +109,7 @@ function supcursor() {
 }
 
 function aumentarContadorSPC() {
-  contador += 1000 * supercursor;
+  contador += 100 * supercursor;
   resultadoElement.textContent = "Galletas: " + contador;
   setTimeout(function() {
     aumentarContadorSPC()
