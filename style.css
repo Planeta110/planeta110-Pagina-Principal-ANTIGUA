@@ -45,7 +45,7 @@ a {
     flex-wrap: wrap;
 }
 
-.pagina1, .pagina2, .pagina3, .pagina4, .pagina5, .pagina6{
+.pagina1, .pagina2, .pagina3, .pagina4, .pagina5, .pagina6, .pagina7{
     box-shadow: 1em 1em 1em rgba(175, 175, 175, 0.678);
     font-size: 26px;
     border: 4px solid rgba(114, 109, 109, 0.282);
@@ -65,7 +65,7 @@ a {
         justify-content: center; /* Centra los elementos horizontalmente */
     }
 
-    .pagina1, .pagina2, .pagina3, .pagina4, .pagina5, #mostrarVentana, .pagina6{
+    .pagina1, .pagina2, .pagina3, .pagina4, .pagina5, #mostrarVentana, .pagina6, .pagina7{
         width: 100%; /* Los elementos ocuparán todo el ancho en pantallas más pequeñas */
         margin-right: 0; /* No hay espacio entre elementos */
         margin-bottom: 20px; /* Espacio entre filas de elementos */
