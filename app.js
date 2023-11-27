@@ -11,3 +11,4 @@ window.onclick = function(event) {
         document.getElementById("miVentana").style.display = "none";
     }
 }
+
