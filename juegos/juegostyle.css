@@ -1,0 +1,41 @@
+.juegos {
+
+    background-color: #dcdde1;
+    margin-top: 100px;
+    left: 50%;
+}
+
+.inicios {
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: rgb(63, 63, 255);
+    height: 240px;
+    width: 600px;
+    border: none;
+    border-radius: 20px;
+}
+
+.primeros  {
+    border-right: none;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Crea tres columnas de tamaño igual */
+    grid-gap: 10px; 
+    border: 10px black solid;
+    padding: 10px;
+}
+
+.primeros div{
+    min-height: 200px;
+    min-width: 200px;
+    border: 2px solid #333;
+}
+
+.inicios h1, h2 {
+    margin-top: 0px;
+}
+
+body {
+    background-color: #f5f6fa;
+    text-align: center;
+}
