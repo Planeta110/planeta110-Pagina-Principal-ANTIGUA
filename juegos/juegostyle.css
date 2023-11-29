@@ -1,6 +1,6 @@
 .juegos {
 
-    background-color: #dcdde1;
+    background-color: #bec4d9;
     margin-top: 100px;
     left: 50%;
 }
@@ -8,7 +8,7 @@
 .inicios {
     margin: 0 auto;
     margin-top: 30px;
-    background-color: rgb(63, 63, 255);
+    background-color: rgb(63, 255, 249);
     height: 240px;
     width: 600px;
     border: none;
@@ -31,11 +31,17 @@
     border: 2px solid #333;
 }
 
+a {
+    text-decoration: none;
+}
+
 .inicios h1, h2 {
     margin-top: 0px;
 }
 
 body {
-    background-color: #f5f6fa;
+    font-family: 'Inter', sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,170,96,1) 0%, rgba(1,192,242,1) 98%, rgba(0,0,0,1) 99%, rgba(0,0,0,1) 100%);
     text-align: center;
 }
