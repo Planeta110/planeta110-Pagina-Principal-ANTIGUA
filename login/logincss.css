@@ -1,0 +1,16 @@
+body {
+    background-image: url("/pag/imag/FONDO.avif");
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.loguearte {
+    margin: 0 auto;
+    background-color: 255, 255, 255, 0.377;
+    height: 100px;
+    width: 100px;
+    color: whitesmoke;
+}
+

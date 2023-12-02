@@ -1,0 +1,12 @@
+body {
+    background-image: url(/pag/imag/FONDO.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+}
+
+
+
