@@ -12,6 +12,7 @@ window.onclick = function(event) {
     }
 }
 
+
 var miOcultar = document.getElementById("bienvenida");
 var logueares = document.getElementById("loguear");
 var regi = document.getElementById("reg");
@@ -40,10 +41,17 @@ var juegosjugados = parseInt(localStorage.getItem("juegosj")) || 0;
 
 function jugadomas1() {
     // Incrementa el valor de juegosjugados
-    juegosjugados += 1;
+    var monedas = localStorage.getItem("monedas") || 0; // Si no hay un valor almacenado, asigna 0
+    monedas = parseInt(monedas, 10) + 1; // Incrementa en 1 el valor de monedas
+    localStorage.setItem("monedas", monedas);
+  
+    var juegosjugados = localStorage.getItem("juegosj") || 0; // Si no hay un valor almacenado, asigna 0
+    juegosjugados = parseInt(juegosjugados, 10) + 1; // Incrementa en 1 el valor de juegosjugados
     localStorage.setItem("juegosj", juegosjugados);
+  
     return juegosjugados;
 }
+
 
 function desloguearse() {
     controlpanel.style.display = "none";
@@ -54,8 +62,11 @@ function desloguearse() {
 
 
 function registrarte() {
+    
+    monedas = 0;
     juegosjugados = 0;
     localStorage.setItem("juegosj", juegosjugados)
+    localStorage.setItem("monendas",monedas)
     var usuario = document.getElementById("usuario").value;
     localStorage.setItem("usuario", usuario);
     console.log(`El nombre de usuario establecido es ${usuario}`);

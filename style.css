@@ -33,6 +33,7 @@ a {
 }
 
 .control {
+    backdrop-filter: blur(10px);
     text-decoration: none;
     display: none;
     z-index: 100;
@@ -55,6 +56,9 @@ a {
 }
 
 .legueoutdesspan {
+    margin-left: -40px;
+    position: absolute;
+    margin-top: -35px;
     cursor: pointer;
     color: whitesmoke;
     font-size: 18px;
@@ -66,6 +70,7 @@ a {
 }
 
 .bi-box-arrow-in-left {
+    
     cursor: pointer;
     color: whitesmoke;
     font-size: 15px;
@@ -284,10 +289,12 @@ button {
 }
 
 
-
+.tupagina {
+    margin-top: 10px;
+}
 
 .loguearte {
-    
+    backdrop-filter: blur(10px);
     text-decoration: none;
     cursor: pointer;
     z-index: 3;
@@ -327,6 +334,13 @@ button {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.legueoutdes {
+
+    margin-left: -120px;
+    cursor: pointer;
+    margin-top: 25px;
 }
 
 
