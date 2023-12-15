@@ -84,7 +84,43 @@ function cerrarreg() {
 
 
 
+//document.addEventListener('mousemove', (e) => {
+    // Obtén la posición del cursor y actualiza la posición del cursor personalizado
+    //const customCursor = document.getElementById('custom-cursor');
+    //customCursor.style.left = e.pageX - customCursor.offsetWidth / 2 + 'px';
+    //customCursor.style.top = e.pageY - customCursor.offsetHeight / 2 + 'px';
+//});
 
+function verificaFormatoImagen() {
+    return new Promise(function(resolve) {
+        var avifImg = new Image();
+        avifImg.onload = function() {
+            var webpImg = new Image();
+            webpImg.onload = function() {
+                resolve(true); // Ambas imágenes (AVIF y WebP) se cargaron correctamente
+            };
+            webpImg.onerror = function() {
+                resolve(false); // La imagen WebP no se cargó correctamente
+            };
+            webpImg.src = '/pag/imag/portals.webp'; // Ruta real de una imagen WebP
+        };
+        avifImg.onerror = function() {
+            resolve(false); // La imagen AVIF no se cargó correctamente
+        };
+        avifImg.src = '/pag/imag/NULL.avif'; // Ruta real de una imagen AVIF
+    });
+}
 
- 
+// Uso de la función
+verificaFormatoImagen().then(function(result) {
+    if (result) {
+        console.log('El formato AVIF y WebP son compatibles.');
+    } else {
+        console.log('El formato AVIF y/o WebP no son compatibles.');
+        window.location.href = 'pag/paginas/errorload/error.html';
+    }
+});
+
+verificaFormatoImagen();
+verificaFormatoImagen().then;
 

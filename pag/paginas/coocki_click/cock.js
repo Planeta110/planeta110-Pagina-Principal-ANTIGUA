@@ -5,6 +5,8 @@ let supercursor = parseInt(localStorage.getItem("supercursor")) || 0;
 const resultadoElement = document.getElementById("resultado");
 let segundosAesperarCur = 1000;
 let aleatorios = 0;
+var ban = document.getElementById("banperma")
+
 
 
 function mas1() {
@@ -21,6 +23,11 @@ if (abuelas => 1) {
 if (supercursor => 1) {
   aumentarContadorSPC()
 }
+
+
+
+
+
 
 function aleatorio() {
   if (contador >= 50000)
@@ -139,7 +146,17 @@ function aumentarContadorSPC() {
 //   localStorage.setItem('supercursores', supercursor);
 //   setTimeout(bucleInfinito, 10000); // Guardar datos cada 10 segundos
 // }
+
+if (localStorage.getItem('baneado')) {
+      ban.style.display= 'block';
+      localStorage.setItem('baneado','baneado')
+}
+
 function bucleConSetTimeout() {
+    if (contador >= 9000000000000000) {
+      ban.style.display= 'block';
+      localStorage.setItem('baneado','baneado')
+    }
     guardar_localstorage()
     setTimeout(bucleConSetTimeout, 3000); // Llama a la función nuevamente después de 1 segundo (1000 milisegundos)
 }

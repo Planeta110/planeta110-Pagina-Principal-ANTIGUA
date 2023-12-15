@@ -9,6 +9,17 @@
     margin: 0 auto;
 }
 
+.banperma {
+    display: none;
+    border-radius: 10px;
+    height: 100%;
+    z-index: 10000000000000000000000;
+    margin: 0 auto;
+    position: fixed;
+    background-color: #dfe6e9a7;
+    backdrop-filter: blur(20px);
+}
+
 .galleta:active{
     background-size: 445px;
     background-position: -150px;
