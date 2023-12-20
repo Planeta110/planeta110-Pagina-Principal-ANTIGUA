@@ -17,6 +17,8 @@ var miOcultar = document.getElementById("bienvenida");
 var logueares = document.getElementById("loguear");
 var regi = document.getElementById("reg");
 var controlpanel = document.getElementById("control")
+var fondobotons = document.getElementById("fondoboton");
+var updatess = document.getElementById('updates')
 
 window.onload = function() {
     miOcultar.style.display = "block";
@@ -27,6 +29,7 @@ window.onload = function() {
         controlpanel.style.display = "none";
         logueares.style.display = "block";
     }
+    
 }
 
 function cerrar() {
@@ -81,6 +84,8 @@ function registrarte() {
 function cerrarreg() {
     regi.style.display = "none";
 }
+
+
 
 
 
